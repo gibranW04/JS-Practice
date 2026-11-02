@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <div class="game-icon">🎯</div>
+
+        <p class="subtitle">NODE.JS MINI GAME</p>
+        <h1>Guess The Number</h1>
+
+        <p class="description">
+            Aku sudah memilih angka dari 1 sampai 100.
+            Bisakah kamu menebaknya?
+        </p>
+
+        <div class="number-range">
+            <span>01</span>
+            <span>50</span>
+            <span>100</span>
+        </div>
+
+        <form id="guessForm">
+            <input
+                type="number"
+                id="guessInput"
+                min="1"
+                max="100"
+                placeholder="Masukkan tebakan..."
+                required
+            >
+
+            <button type="submit" id="guessButton">
+                TEBAK ANGKA
+            </button>
+        </form>
+
+        <div id="message" class="message">
+            Masukkan angka untuk memulai!
+        </div>
+
+        <div class="attempts">
+            <span>JUMLAH PERCOBAAN</span>
+            <strong id="attempts">0</strong>
+        </div>
+
+        <button id="restartButton" class="restart">
+            ↻ MAIN LAGI
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

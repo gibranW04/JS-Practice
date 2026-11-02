@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101c;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    text-align: center;
+    background: #1b1b2b;
+    border: 1px solid #34344b;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px #00000050;
+}
+
+.game-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #a5a5b8;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.number-range {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 12px;
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #45455e;
+    border-radius: 12px;
+    background: #11111d;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a78bfa;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.message {
+    min-height: 55px;
+    margin: 22px 0;
+    padding: 16px 10px;
+    border-radius: 10px;
+    background: #29293e;
+    color: #c4b5fd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.attempts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid #34344b;
+    color: #a5a5b8;
+    font-size: 12px;
+}
+
+.attempts strong {
+    color: white;
+    font-size: 24px;
+}
+
+.restart {
+    background: #303047;
+    margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+    .game-container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
